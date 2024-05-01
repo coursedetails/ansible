@@ -13,7 +13,7 @@
    - name: create user
      ansible.builtin.command: useradd expense
      when: user.rc != 0
-     
-   - name: say hello
+
+   - name: say Hello
      ansile.builtin.debug:
-       msg: "hello"
+       msg: "Hello"
