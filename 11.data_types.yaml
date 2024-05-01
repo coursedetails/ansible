@@ -10,7 +10,7 @@
     - Dveops with AWS: 3 
     - Shell: 2
     - Docker: 1
-   realtime projects: true #boolean
+   RealProject: true #boolean
   tasks:
   - name: print variables
     ansible.builtin.debug
