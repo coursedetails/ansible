@@ -24,7 +24,7 @@
        msg: "{{ numbers | unique }}"
   - name: min and max numbers
     vars: 
-     numbers: [1,4,5,6,4,3]
+     number: [1,4,5,6,4,3]
     ansible.builtin.debug:
        msg: " minimum vale is {{ number | min }}and maximum number is {{number | max }}"
 
