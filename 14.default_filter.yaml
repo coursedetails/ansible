@@ -11,3 +11,9 @@
      greetings: "Hello morning"
     ansible.builtin.debug:
        msg: " hello {{greetings | upper}}"
+
+  - name: lowercase
+    vars: 
+     greetings: "Hello evening"
+    ansible.builtin.debug:
+       msg: " hello {{greetings | lower}}"
