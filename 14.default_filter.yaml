@@ -4,4 +4,4 @@
   tasks:
   - name: print default value
     ansible.builtin.debug:
-       msg: "hello {{wishes}}"
+       msg: "hello {{wishes | default('ansible')}}"
