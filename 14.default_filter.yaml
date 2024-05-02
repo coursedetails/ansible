@@ -31,7 +31,7 @@
 - name: convert dictionary into items
   hosts: localhost
   vars:
-  - my_dict:
+   my_dict:
        course: devops
        trainer: siva
        duration: 3.5 months
@@ -41,7 +41,7 @@
        msg: "before conversion: {{my_dict}}"
   - name: after conversion
     ansible.builtin.debug:
-        msg: "after conversion: {{ my_dict | dict2items }}"
+       msg: "after conversion: {{ my_dict | dict2items }}"
 
 
   
