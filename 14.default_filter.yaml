@@ -17,3 +17,11 @@
      greetings: "Hello evening"
     ansible.builtin.debug:
        msg: " hello {{greetings | lower}}"
+  - name: duplicate
+    vars: 
+     numbers: [24,2,4,3,4]
+    ansible.builtin.debug:
+       msg: "{{numbers | unique}}"
+
+
+  
