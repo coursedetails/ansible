@@ -26,7 +26,22 @@
     vars: 
      number: [1,4,5,6,4,3]
     ansible.builtin.debug:
-       msg: " minimum vale is {{ number | min }}and maximum number is {{number | max }}"
+       msg: " minimum vale is {{ number | min }} and maximum number is {{number | max }}"
+
+- name: convert dictionary into items
+  hosts: localhost
+  vars:
+  - my_dict:
+       course: devops
+       trainer: siva
+       duration: 3.5 months
+  tasks:
+  - name: before conversion
+    ansible.builtin.debug:
+       msg: "before conversion: {{my_dict}}"
+  - name: after conversion
+    ansible.builtin.debug:
+        msg: "after conversion: {{ my_dict | dict2items }}"
 
 
   
